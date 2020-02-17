@@ -74,12 +74,15 @@ Keyframes for animation*/
 
 /* Cards! */
 .pricing{
-    min-height: 500px;
-  
+  min-height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
 }
 
 .card {
-  
+  flex-basis: 400px;
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -128,7 +131,10 @@ Keyframes for animation*/
 /* Gallery! */
 
 .gallery{
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   min-height: 600px;
 }
 
@@ -171,7 +177,7 @@ header{
 
   /* Cards! */
   .card {
-    
+    flex-basis: 250px;
   }
 
   .card_big{
@@ -200,6 +206,12 @@ header{
   }
   .card {
     flex-basis: 200px;
+  }
+  .pricing {
+    align-items: flex-start;
+  }
+  .gallery {
+    display: none;
   }
 
 }
